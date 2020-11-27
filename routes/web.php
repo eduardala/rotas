@@ -8,7 +8,7 @@ Route::get('/', function () {
 
 Route::get('/produtos/{n}', function ($n) {
     return view('produtos', ['n' => $n]);
-})->where('n','[1-11]');
+});
 
 Route::get('/serie/{x}/{y}/{z}', function ($x,$y,$z) {
   return view('serie', ['x' => $x, 'y' => $y, 'z' => $z]);
